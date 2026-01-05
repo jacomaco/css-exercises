@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 html, body {
   height: 100%;
 }
@@ -20,6 +30,27 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+  display: flex;
+  padding: 16px;
+  gap: 15px ;
+}
+.left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+.top {
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .icon {
